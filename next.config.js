@@ -37,8 +37,8 @@ module.exports = {
       },
       // Regex Path Matching - The regex below will match `/post/123` but not `/post/abc`
       {
-        source: '/posts/:slug',
-        destination: 'https://fannews.media/posts/:slug',
+        source: '/posts/:slug*',
+        destination: 'https://fannews.media/posts/:slug*',
         permanent: true,
       },
     ]
