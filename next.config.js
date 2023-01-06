@@ -19,7 +19,7 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/a-look-back-at-the-beloved-internet-famous-animals-who-died-in-2022/',
+        source: '/a-look-back-at-the-beloved-internet-famous-animals-who-died-in-2022',
         destination: 'https://fannews.media/posts/a-look-back-at-the-beloved-internet-famous-animals-who-died-in-2022/',
         permanent: false,
       },
