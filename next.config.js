@@ -19,8 +19,8 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/teamkkk',
-        destination: '/about11',
+        source: '/test',
+        destination: '/makashi',
         permanent: false,
       },
       // Path Matching - will match `/old-blog/a`, but not `/old-blog/a/b`
