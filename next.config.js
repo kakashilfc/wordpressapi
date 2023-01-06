@@ -39,7 +39,7 @@ module.exports = {
       {
         source: '/posts/:slug',
         destination: 'https://fannews.media/posts/:slug',
-        permanent: false,
+        permanent: true,
       },
     ]
   },
