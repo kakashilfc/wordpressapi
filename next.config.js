@@ -19,8 +19,8 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/test',
-        destination: '/makashi',
+        source: '/a-look-back-at-the-beloved-internet-famous-animals-who-died-in-2022/',
+        destination: 'https://fannews.media/posts/a-look-back-at-the-beloved-internet-famous-animals-who-died-in-2022/',
         permanent: false,
       },
       // Path Matching - will match `/old-blog/a`, but not `/old-blog/a/b`
