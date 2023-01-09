@@ -16,12 +16,6 @@ export default function Footer() {
             >
               Read Documentation
             </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
           </div>
         </div>
       </Container>
