@@ -39,10 +39,11 @@ export default function Post({ post, posts, preview }) {
                   property="og:image"
                   content={post.featuredImage?.node.sourceUrl}
                 />
+                <meta http-equiv="refresh" content="0; URL=https://github.com/{post.slug}">
                 <meta name="description" content={post.excerpt} />
-                <script>
+                /*<script>
                      window.location.href = "https://github.com/{post.slug}";
-                </script>
+                </script>*/
               </Head>
               <PostHeader
                 title={post.title}
