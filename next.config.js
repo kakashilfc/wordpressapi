@@ -16,31 +16,4 @@ module.exports = {
       'secure.gravatar.com',
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: '/a-look-back-at-the-beloved-internet-famous-animals-who-died-in-2022',
-        destination: 'https://fannews.media/posts/a-look-back-at-the-beloved-internet-famous-animals-who-died-in-2022/',
-        permanent: false,
-      },
-      // Path Matching - will match `/old-blog/a`, but not `/old-blog/a/b`
-      /*{
-        source: '/old-blog/:slug',
-        destination: '/news/:slug',
-        permanent: false,
-      },*/
-      // Wildcard Path Matching - will match `/blog/a` and `/blog/a/b`
-      {
-        source: '/blog/:slug*',
-        destination: '/news/:slug*',
-        permanent: false,
-      },
-      // Regex Path Matching - The regex below will match `/post/123` but not `/post/abc`
-      {
-        source: '/posts/:slug',
-        destination: 'https://fannews.media/posts/:slug',
-        permanent: true,
-      },
-    ]
-  },
 }
