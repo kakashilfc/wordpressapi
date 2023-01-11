@@ -63,7 +63,7 @@ export default function Post({ post, posts, preview }) {
     </Layout>
   )
 }
-export const getServerSideProps: GetServerSideProps<{ data: Data }> = async (context) => {
+export async function getServerSideProps(context) {
     const id = context.params.id;
     
     //var user_agent = context.req.headers['user-agent'];
