@@ -63,37 +63,7 @@ export default function Post({ post, posts, preview }) {
     </Layout>
   )
 }
-export async function getServerSideProps(context) {
-    const id = context.params.id;
-    
-    //var user_agent = context.req.headers['user-agent'];
-    var user_agent = context.req.headers['referer'];
-    if(typeof user_agent == 'undefined' || typeof user_agent == '' ){
-      user_agent ="bot or user link";
-    }
 
-    const host = context.req.headers['host'];
-    const url  = 'https://'+ host;
-      if (user_agent.match(/facebook/i)) {
-        return {
-          redirect: {
-              destination: 'https://bokupet.com/',
-             permanent: false,
-          },
-        };
-      }else{
-  
-        const res = await fetch('https://github.com/')
-        const posts = await res.json()
-        return {
-            props: {
-              results: posts,
-              meta: {host:host,url:url},
-            },
-        }
-      }
-      
-  }
 export const getStaticProps: GetStaticProps = async ({
   params,
   preview = false,
